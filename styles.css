@@ -1,0 +1,146 @@
+/* imports--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+
+/* general-styles-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+:root {
+--orange: hsl(25, 97%, 53%);
+--light-orange: hsl(25, 97%, 53%, 0.8);
+--white: hsl(0, 0%, 100%);
+--light-grey: hsl(217, 12%, 63%);
+--medium-grey: hsl(216, 12%, 54%);
+--dark-blue: hsl(213, 20%, 18%);
+--very-dark-blue: hsla(216, 12%, 8%, 0.719);
+
+}
+
+body {
+    background-color: black;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+/* main-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+main {
+    background-color: var(--very-dark-blue);
+    color: white;
+    padding: 1.5em 0.9em 3em 1.5rem;
+    border-radius: 0.9em;
+    max-width: 100%;;
+}
+
+
+
+
+.logo {
+    display: grid;
+    place-items: center;
+    width: 2em;
+    height: 2em;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+}
+
+img {
+    width: 0.6em;
+}
+
+.description {
+    color: var(--light-grey);
+    width: 19rem;
+}
+
+.ratings {
+    display: flex;
+    justify-content: center;
+    margin-inline-end: 1em;
+}
+
+span {
+    color: var(--light-grey);
+    width: 3em;
+    font-size: 1em;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    display: inline-block;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    font-size: 0.9em;
+    margin-inline: 0.5em;
+    cursor: pointer;
+}
+
+
+span:hover {
+    background-color: var(--light-grey);
+    color: var(--white);   
+}
+
+
+span:active {
+    background-color: var(--orange);
+    color: var(--white);   
+}
+
+
+button {
+    width: 20em;
+    display: block;
+    margin: auto;
+    margin-block-start: 2em;
+    margin-inline-end: 1.9em;
+    background-color: var(--orange);
+    border-radius: 2em;
+    padding: 0.9em;
+    border: none;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+
+/* thank you page ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.thankyou-image {
+    background-image: url(./images/illustration-thank-you.svg);
+    background-position:45%;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 11em;
+}
+
+.thankyou-text {
+    color: var(--light-grey);
+    width: 19rem;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+p.ratings {
+    color: var(--light-orange);background-color: var(--dark-blue);
+    line-height: 2em;
+    text-align: center;
+    border-radius: 1em;
+    width: 14em;
+    margin-inline-start: 3em;
+}
+
+.thankyou-heading {
+    text-align: center;
+}
+
+.select {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
