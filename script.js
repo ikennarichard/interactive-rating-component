@@ -42,7 +42,7 @@ const markup =
 
 `<div class="thankyou-image"></div>
 
-<p class="ratings">You selected ${userRating} out 5 stars</p>
+<p class="ratings">You selected ${userRating} out of 5 stars</p>
 
 <h1 class="thankyou-heading">Thank you!</h1>
 
